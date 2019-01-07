@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>prueba</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Arbutus+Slab|Playfair+Display+SC|Roboto+Mono" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style_grid.css">
+	<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+	<style type="text/css">
+		*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		}
+		ul li{
+			list-style-type: none;
+			display: inline-block;
+		
+		}
+		a{
+			text-decoration: none;
+			color:black;
+			word-spacing: 1em;
+		}
+		main{
+			margin: auto;
+			width: 1024px;
+			height: 1900px;
+			border: 0.1em solid black;
+		}
+		body{
+			background: #fffcf9;
+		}
+		.container{
+			width: 1024px;
+			margin: auto;
+			border: 0.1em solid black;
+			overflow: hidden;
+			background: #fffcf9;
+		}
+		#container2{
+			width: 1024px;
+			margin: auto;
+			border: 0.1em solid black;
+		}
+
+		#a{
+			height: 200px;
+			float: left;
+			border: 0.1em solid black;
+			
+
+		}
+		#ab{
+			width: 90%;
+			padding-top: 30px;
+			padding-left: 10px;
+		}
+		#b{
+			
+			border: 0.1em solid black;
+			height: 200px;
+			float: left;
+			position: relative;
+			
+		}
+		#c{
+			height: 200px;
+			text-align: center;
+			font-family: 'Roboto Mono', monospace;
+			font-weight: bold; 
+			padding-top:60px;
+			line-height: 1.9;
+			border: 0.1em solid black;
+
+		}
+		#d{
+			border: 0.1em solid black;
+			height: 80px;
+			text-align: center;
+			padding-top: 25px;
+		}
+
+		
+
+		header{
+			border: 0.1em solid black;
+			height: 200px;
+			width: 50%;
+			text-align: center;
+
+
+		}
+		img{
+			width: 100%;
+		}
+		nav{
+			width: 1024px;
+			margin: auto;
+			height: 80px;
+			border: 0.1em solid black;
+			font-family: 'Roboto Mono', monospace;
+			font-weight: bold; 
+		}
+		
+		footer{
+			width: 1024px;
+			margin: auto;
+			height: 50px;
+			border: 0.1em solid black;
+			}
+
+
+		#pez{
+			height: 600px;
+			position: relative;
+			border: 0.1em solid black;
+			
+		}
+		#brujula{
+			
+			height: 600px;
+			position: relative;
+			border: 0.1em solid black;
+
+		}
+		#telefono{
+			height: 500px;
+			position: relative;
+			border: 0.1em solid black;
+
+
+		}
+		#gt{
+			text-align: center;
+		}
+		#source{
+			height: 500px;
+			position: relative;
+			border: 0.1em solid black;
+			 
+		}
+		#catch, #find{
+			font-size: 4em;
+			padding-left:20px;
+			font-weight: bold; 
+			font-family: 'Playfair Display SC', serif;
+			
+		}
+		#story{
+			font-size: 3em;
+			padding-left:20px;
+			font-weight: bold; 
+			font-family: 'Playfair Display SC', serif;
+			
+
+		}
+		#strai{
+			font-size: 4em;
+			padding-left:20px;
+			font-weight: bold; 
+			font-family: 'Playfair Display SC', serif;
+			float:left;
+		}
+		
+		#latest, #full{
+			font-size: 0.7em;
+			padding-left:20px;
+			font-family: 'Roboto Mono', monospace;
+			
+		}
+		#full{
+			float: right;
+			margin-right: 30px;
+		}
+		#from {
+			padding-left:20px;
+			font-family: 'Roboto Mono', monospace;
+			font-weight: bold;
+
+		}
+		#find{
+			font-size: 3em;
+			text-align: center;
+			padding-left:1px;
+			padding-top:30px;
+			font-weight: bold; 
+
+		}
+		#reloj{
+			width: 80%;
+			margin-left: 30px;
+		}
+
+
+		#tlf{
+			height: 30%;
+			width: 80%;
+			margin-top: 30px;
+			margin-left: 20px;
+
+		}
+		#lineas{
+			height: 700px;
+			position: relative;
+			border: 0.1em solid black;
+			border-bottom: 0.4em solid black;
+
+		}
+		#pescador{
+			height: 800px;
+			position: relative;
+			border: 0.1em solid black;
+		
+
+		}
+		#cangrejo{
+			height: 700px;
+			position: relative;
+			border: 0.1em solid black;
+
+		}
+		#blanco{
+			height: 100px;
+			border: 0.1em solid black;
+			font-size: 2em;
+			text-align: center;
+			padding-top: 30px;
+
+		}
+		#blancos{
+			height: 100px;
+			border: 0.1em solid black;
+			float: right;
+
+		}
+		#belcon, #fys{
+			padding-left:20px;
+			font-family: 'Roboto Mono', monospace;
+			text-align: center;
+			font-size: 0.7em;
+
+		}
+		p{
+			font-family: 'Roboto Mono', monospace;
+			font-size: 0.7em;
+
+		}
+		#gt{
+			margin-left: 10px;
+		}
+		#blue{
+			padding-left:20px;
+			column-count:2;
+			padding-top: 20px;
+			column-gap: 2em;
+
+		}
+		#cola{
+			height: 70%;
+			width: 30%;
+			float: right;
+			margin-top: 20px;
+		
+
+			
+		}
+		#sea{
+			padding-left:20px;
+			font-family: 'Roboto Mono', monospace;
+			font-weight: bold;
+			float: left;
+
+		}
+		#story{
+			font-size: 3.4em;
+			padding-left:20px;
+			font-weight: bold; 
+			font-family: 'Playfair Display SC', serif;
+			float:left;
+
+		}#tale{
+			padding-left:20px;
+			font-family: 'Roboto Mono', monospace;
+			font-weight: bold;
+			float: left;
+
+		}
+		#the{
+			padding-left:20px;
+			padding-top: 20px;
+			padding-right:20px;
+
+		}
+		#fresh{
+			font-size: 3.4em;
+			text-align: center;
+			font-weight: bold; 
+			font-family: 'Playfair Display SC', serif;
+		
+
+		}
+		#taste{
+			
+			font-family: 'Roboto Mono', monospace;
+			font-weight: bold;
+			text-align: center;
+		}
+		h2{
+			font-family: 'Staatliches', cursive;
+			font-size: 5em;
+			letter-spacing: 0.2em;
+			
+		}
+		h3{
+			font-family: 'Staatliches', cursive;
+			font-size: 2em;
+			letter-spacing: 0.2em;
+		
+		}
+		h1{
+			text-align: center;
+			font-family: 'Roboto Mono', monospace;
+			font-size: 0.9em;
+			margin-top: 10px;
+			
+		}
+		#f1, #f2, #f3{
+			border: 0.1em solid black;
+			height: 50px;
+			text-align: center;
+			padding-top: 13px;
+		}
+		#discontinua{
+			border: 0.1em solid black;
+			border-style:dashed;
+			height: 80%;
+			margin: 40px;
+		}
+		#discontinua2{
+			border: 0.1em solid black;
+			border-style:dashed;
+			height: 80%;
+			margin: 30px;
+			
+			
+		}
+
+
+		
+
+		
+		
+			
+		
+
+		
+
+
+
+
+
+
+
+
+	/*Landscape*/
+		@media only screen and (max-width: 600px){
+			/*Landscape styles*/
+			body{
+				background:yellow;
+				}
+
+			}
+	</style>
+</head>
+
+<body>
+	<header class="container">
+			<div class="col-2" id="a">
+				<img id="ab"src="images/1.jpg"></img>
+			</div>
+			<div class="col-8" id="b">
+				<hgroup>
+					<h1>SUNDAY, DECEMBER 16, 2018</h3>
+					<h2>SEA HARVEST</h1>
+					<h3>FRESH SEAFOOD</h2>
+					
+				</hgroup>
+			</div>
+			<div class="col-2" id="c">
+					<p>Belconnen <br>market<br> Fyshwick<br>markets</p>
+			</div>
+	</header>
+		<nav>
+			<ul>
+					<div id="d"class="col-3">
+						<li><a href="">ABOUT</a>
+					</div>
+					<div id="d"class="col-3">
+						<li><a href="">PRODUCTS</a>
+					</div>
+					<div id="d"class="col-3">
+						<li><a href="">CONTACT</a>
+					</div>
+					<div id="d"class="col-3">
+						<li><a href="">ORDER</a>
+					</div>
+			</ul>
+		</nav>
+	
+	<main>
+			<div class="container2">
+				<div id="primera">
+					<section id="pez" class="col-8">
+						<div>
+							<p id="catch">CATCH OF THE <br>DAY</p>
+						</div>
+						<div>
+							<p id="from">FROM SEA TO PLATE</p>
+						</div>
+						<div>
+							<img src="images/3.jpg">
+						</div>
+						<div>
+							<p id="latest">The latest harvest has yielded deliciously fresh seafood perfect for devouring on its own or as part of a scrumptious recipe. Here’s a seasonal favourite…</p>
+						</div>
+						<div>
+							<p id="full">Full report on page 3</p>	
+						</div>
+					</section>
+					
+						<section  id="brujula" class="col-4">
+							<div id="discontinua">
+							<p id="find">FIND US</p>
+								<img id="reloj"src="images/2.jpg">
+							<p id="belcon">BELCONNEN MARKETS<br>10 lathlain st, belconnen <br>Act 2617, Australia <br>Open wed-sun 8:00AM-6:00pm</p>
+							<p id="fys">Fyshwick Markets<br>12 DALBY ST, FYSHWICH ACT <br>2609, australia <br>Open the-sun 7:00AM-5:30PM</p>
+						</div>
+						</section>
+					
+				</div>
+			</div>
+			
+			<!--segunda fila-->
+			<div id="segunda">
+				<section id="telefono" class="col-3">
+					<div id="discontinua2">
+						<img id="tlf"src="images/11.jpg">
+						<div id="gt">
+								<p id="find">GET IN TOUCH</p>
+								<p>Call us<br>0436 455 551</p>
+								<p>Email us <br><a href="#">Click here</a></p>
+						</div>
+					</div>
+				</section>
+				<section id="source"class="col-9">
+					<p id="strai">Straight from <br>the source</p>
+					<img id="cola"src="images/5.jpg" class="col-3">
+					<p id="sea">SEA HARVEST FRESH</p>
+					<p id="blue" class="col-8">The blue green waters off the south east coast of Australia glisten as the sun rises above the horizon. Up early and eager, local fishermen brave the choppy seas as they collect their daily yield. Dedicated to preservation, they work extra hard to follow environmentally sustainable fishing practices – including avoiding overfishing, staying clear of protected areas, releasing protected species, and using safe fishing gear. As they arrive back at the docks, the huge array of fresh seafood is put on ice and shipped directly to Sea Harvest’s door in Canberra. Oysters, prawns, mussels, calamari, lobster, snapper, and every seasonal fish available travels straight from sea to store, just for you.
+					</p>
+					
+				</section>
+		</div>
+			<!--tercera fila-->
+		<div id="tercera">
+			<section id="lineas" class="col-4">
+				<p id="story">The sea harvest story</p>
+				<p id="tale">A tale of fish and family</p>
+				<img id="ab"src="images/9.jpg">
+				<p id="the">the Sea Harvest story begins in the 1800s on a small, picturesque fishing island called Lefkada in Greece. For generations since, our love of the sea and taste for seafood has endured, following us to Canberra where we settled in the 1970s. For over 40 years now, we have dedicated ourselves to bringing the finest and freshest Australian seafood to our nation’s capital.
+				</p>
+				<p id="full">Continued on page 9</p>	
+			</section>
+			<section id="pescador" class="col-4">
+				<p id="story">batemans<br>bay<br> fishing<br> tips</p>
+				<p id="tale">core the best catch</p>
+				<img src="images/8.jpg">
+				<p id="the">Cars will soon be bumper-to-bumper on the Clyde and Brown mountains as Canberrans pour out of the capital to feel the sun on their backs and…
+				</p>
+				<p id="full">Continued on page 11</p>	
+			</section>	
+			<section id="cangrejo" class="col-4">
+				<p id="fresh">fresh as<br> it gets</p>
+				<p id="taste">A taste of the sea</p>
+				<img src="images/6.jpg">
+				<p id="the">Sea Harvest’s seafood is trusted by many of the best seafood restaurants in Canberra. We are obsessed with cleanliness and quality, and only buy from suppliers who are 100% committed to sustainable fishing practices and the long term protection of sea life. We buy fresh so that we can sell fresh, and pride ourselves on bringing the best of the coast to the capital.</p>
+			</section>
+			<section id="nada" class="col-4">
+				<p class="col-4"></p>
+			</section>
+			<section id="blanco" class="col-4">
+				<p>SEA HARVEST</p>
+			</section>
+		</div>
+		</main>
+			<footer>
+					<div id="f1" class="col-6">
+						<p>2018 SEA HARVEST AUSTRALIA, FRESH SEAFOOD MARKET</p>
+					</div>
+					<div id="f2" class="col-3">
+						<p>Belconnen markets/ Fyshwick markets</p>
+					</div>
+					<div id="f3" class="col-3">
+						<p>Website by ed.</p>
+					</div>	
+			</footer>
+		</div>
+	</body>
+</html>
